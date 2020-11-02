@@ -14,7 +14,7 @@ pipeline {
       }
       steps {
             checkout scm           
-            container('nodejs') {
+            container('nodejs-container') {
               sh '''
                  yarn install
                  yarn test:unit
