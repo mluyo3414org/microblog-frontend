@@ -1,4 +1,4 @@
-ipeline {
+pipeline {
   agent none
   options { 
     buildDiscarder(logRotator(numToKeepStr: '10'))
