@@ -4,7 +4,7 @@ pipeline {
     buildDiscarder(logRotator(numToKeepStr: '10'))
     skipDefaultCheckout true
   }
-  stages('Node Test and Build')
+  stages('Node Test')
   {
     stage('Node Tests') {
       agent {
